@@ -9,21 +9,28 @@
         <link rel="stylesheet" href="formate.css">
     </head>
     <body>
-      
-
-<nav>
-  <ul>
-      <li><a href="#0">Text</a></li>
-      <li><a href="#0">Text</a></li>
-      <li><a href="#0">Text</a></li>
-      <li><a href="#0">Text</a></li>
-      <li><a href="#0">Text</a></li>
-  </ul>
-</nav>
-
-<div id="content">
-<h1>Disign hier!</h1>
-</div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="#0">Victory Esports</a>
+            <a href="#">Text</a>
+            <a href="#">Text</a>
+            <a href="#">Text</a>
+            <a href="#">Text</a>
+          </div>
+          
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          <h1>Design  hier!</h2>
+          
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
 
 
     </body>
